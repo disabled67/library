@@ -1,0 +1,17 @@
+<div *ngIf="book">
+  <h2>{{book.title}} </h2>
+  <div>
+    <label>Authors: </label> <p>{{book.authors}} </p>
+  </div>
+
+  <div>
+    <label>Description: </label> <p>{{book.description}} </p>
+  </div>
+
+  <div class="center-block">
+    <label>text: </label> <p>{{book.text}} </p>
+  </div>
+
+
+  <button (click)="goBack()">Back</button>
+</div>

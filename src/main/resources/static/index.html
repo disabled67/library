@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <base href="/">
+  <title>Angular 2</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <!-- IE required polyfills, in this exact order -->
+  <script src="lib/core-js/client/shim.min.js"></script>
+  <script src="lib/zone.js/dist/zone.js"></script>
+  <script src="lib/reflect-metadata/Reflect.js"></script>
+  <script src="lib/systemjs/dist/system.src.js"></script>
+  <script src="lib/rxjs/bundles/Rx.js"></script>
+
+  <script src="systemjs.config.js"></script>
+
+  <script>
+    System.import('app').catch(function(err){ console.error(err); });
+  </script>
+
+</head>
+
+<body>
+
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+      <div class="single-page-nav sticky-wrapper" id="tmNavbar">
+        <ul class="nav navbar-nav">
+          <li><a href="/">Home</a></li>
+          <li><a href="/admin">Admin</a></li>
+          <li><a href="/book">Test</a></li>
+          <li><a href="#section4">Test</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div id="section1">
+    <header id="header-area" class="intro-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 text-center">
+            <div class="header-content">
+              <h1>LIBRARY</h1>
+              <h4>Simple Bootstrap Template</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+  </div>
+  <div id="section2">
+    <!-- Start Feature Area -->
+
+    <section id="feature-area" class="about-section">
+      <div class="container">
+        <my-app>Loading...</my-app>
+      </div>
+    </section>
+    <!-- End Feature Area -->
+
+  </div>
+
+  <!-- Start Footer Area -->
+  <footer id="footer-area">
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-sm-12">
+          <div class="footer-content">
+            <h1>Use it free!</h1>
+            <p>“Conquer is free Bootstrap template from templatemo website.
+              <br>No backlink is required to use this layout.”</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 text-center">
+          <p class="copy">Copyright © 2084 Your Company Name
+
+            | Design: <a rel="nofollow" href="http://www.templatemo.com" target="_parent">template mo</a></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- End Footer Area -->
+
+  <script src="assets/js/jquery-1.11.2.min.js"></script>
+  <script src="assets/js/jquery.scrollUp.min.js"></script> <!-- https://github.com/markgoodyear/scrollup -->
+  <script src="assets/js/jquery.singlePageNav.min.js"></script> <!-- https://github.com/ChrisWojcik/single-page-nav -->
+  <script src="assets/js/parallax.js-1.3.1/parallax.js"></script> <!-- http://pixelcog.github.io/parallax.js/ -->
+  <script>
+
+  </script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+spring:
+
+    datasource:
+        dataSourceClassName: com.mysql.jdbc.jdbc2.optional.MysqlDataSource
+        url: jdbc:mysql://localhost/database
+        username: root
+        password: 1234
+
+    jpa:
+        hibernate:
+           ddl-auto: update
+
+
+jwt:
+   secret: $uper$ecret
