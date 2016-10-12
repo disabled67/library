@@ -46,5 +46,10 @@ public class BookController  {
         return bookService.findByTitle(pageable, title);
     }
 
+    @RequestMapping(value = "/blabla", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
+    public List<BookDto> findBookd(@PathVariable String title, Pageable pageable) {
+        return bookService.findByTitle(pageable, title);
+    }
+
 
 }
